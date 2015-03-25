@@ -1,0 +1,20 @@
+{
+  "name": "molecule",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha ./lib/*.test.js -u exports"
+  },
+  "author": "Sergey Yarmonov",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "rewire": "^2.3.1",
+    "should": "^5.2.0",
+    "simple-mock": "^0.2.9"
+  }
+}
