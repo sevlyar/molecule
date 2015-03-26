@@ -1,7 +1,7 @@
 {
-  "name": "molecule",
+  "name": "molecule-di",
   "version": "0.1.0",
-  "description": "",
+  "description": "Node.js IoC container with dependency injection and module loader library.",
   "main": "./index.js",
   "scripts": {
     "test": "mocha ./lib/*.test.js -u exports",
@@ -9,6 +9,10 @@
   },
   "author": "Sergey Yarmonov",
   "license": "ISC",
+  "repository" : { 
+    "type": "git",
+    "url": "https://github.com/sevlyar/molecule.git"
+  },
   "dependencies": {
     "lodash": "^3.5.0"
   },
