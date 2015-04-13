@@ -7,6 +7,8 @@ var Module = module.exports = function(http, logger) {
 	this.logger = logger;
 };
 
+Module.$constructor = true;
+
 Module.$require = {
 	logger: "lib/testing/logger",
 	http: 	"lib/testing/http"
