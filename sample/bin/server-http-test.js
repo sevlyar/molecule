@@ -8,14 +8,11 @@ var context = new molecule.Context();
 context.map("http",   molecule.loader("lib/testing/http"));
 context.map("logger", molecule.loader("lib/testing/logger"));
 
-context.map("config", molecule.loader("lib/services/config"));
-context.map("args", molecule.loader("lib/services/args"));
+context.map("testRunner", molecule.loader("lib/testing/runner"));
 
-context.map("testRunner", molecule.loader("lib/testing/runner"))
-
-var appLoader = molecule.loader("lib/app");
-var app = context.invoke(appLoader);
+var app = molecule.loader("lib/app", context)();
 
 app.run(function() {
 	context.get("testRunner").run();
+	console.log("done");
 });
