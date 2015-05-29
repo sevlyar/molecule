@@ -127,9 +127,9 @@ var moduleAInstance = moduleALoader();
 moduleAInstance.f(); // "str"
 ```
 
-It is possible to mock the dependency of module if preregister the data in context with required name.
-
 ## Mocking module dependencies
+
+It is possible to mock the dependency of module if preregister the data in context with required name.
 
 ```javascript
 var molecule = require("molecule");

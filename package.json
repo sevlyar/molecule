@@ -1,6 +1,9 @@
 {
   "name": "molecule-di",
   "version": "0.1.0",
+  "engines" : { 
+    "node" : ">=0.12"
+  },
   "description": "Node.js IoC container with dependency injection and module loader library.",
   "main": "./index.js",
   "scripts": {

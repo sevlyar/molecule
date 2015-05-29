@@ -10,7 +10,7 @@ context.map("logger", molecule.loader("lib/testing/logger"));
 
 context.map("testRunner", molecule.loader("lib/testing/runner"));
 
-var app = molecule.loader("lib/app", context)();
+var app = molecule.loader.load("lib/app", context);
 
 app.run(function() {
 	context.get("testRunner").run();
