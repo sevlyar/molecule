@@ -60,7 +60,7 @@ function f(arg1, arg2) {
 context.invoke(f); // returns "some string 1"
 
 function missing(arg1, unknown) {}
-context.invoke(midding); // an exception is thrown
+context.invoke(missing); // an exception is thrown
 
 function chain($context) {
 	return $context.invoke(f);
